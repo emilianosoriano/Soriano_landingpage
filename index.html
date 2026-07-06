@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio — Certificates & Experience</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="name">Your Name</h1>
+      <p class="tagline">Certificates · Education · Internships · Current Work</p>
+      <nav class="nav">
+        <a href="#certificates">Certificates</a>
+        <a href="#education">Education</a>
+        <a href="#internships">Internships</a>
+        <a href="#current">Current</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="certificates" class="section">
+      <h2>Certificates</h2>
+      <p class="muted">Click a certificate to view or download.</p>
+      <div class="grid certificates-grid">
+        <article class="card">
+          <a href="#" class="card-link">
+            <img src="assets/placeholder.svg" alt="Certificate 1"/>
+            <h3>Certificate Title 1</h3>
+            <p class="meta">Issued by Provider — 2024</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#" class="card-link">
+            <img src="assets/placeholder.svg" alt="Certificate 2"/>
+            <h3>Certificate Title 2</h3>
+            <p class="meta">Issued by Provider — 2023</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#" class="card-link">
+            <img src="assets/placeholder.svg" alt="Certificate 3"/>
+            <h3>Certificate Title 3</h3>
+            <p class="meta">Issued by Provider — 2022</p>
+          </a>
+        </article>
+      </div>
+      <p class="hint">Tip: Replace the placeholders with PDFs or images and link them to the card anchors.</p>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul class="list">
+        <li>
+          <strong>B.Sc. in Computer Science</strong>, University Name — 2020–2024
+          <p class="muted">Relevant coursework: Algorithms, Web Development, Databases</p>
+        </li>
+        <li>
+          <strong>High School Diploma</strong>, School Name — 2016–2020
+        </li>
+      </ul>
+    </section>
+
+    <section id="internships" class="section">
+      <h2>Internships</h2>
+      <ul class="list">
+        <li>
+          <strong>Frontend Intern</strong> — Company A (Summer 2023)
+          <p class="muted">Worked on UI components and accessibility improvements.</p>
+        </li>
+        <li>
+          <strong>Backend Intern</strong> — Company B (Winter 2022)
+          <p class="muted">Built API endpoints and improved performance of queries.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="current" class="section">
+      <h2>What I'm Working On</h2>
+      <p>I am currently working on a web application for managing personal learning progress and certificate tracking. I focus on frontend architecture, automated testing, and progressive web app features.</p>
+      <p class="muted">If you'd like details or a demo, please reach out below.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>If you'd like to schedule a chat or discuss something, send me a message below — it'll open your email client.</p>
+
+      <form id="contactForm" class="contact-form">
+        <label>
+          Your name
+          <input type="text" name="name" placeholder="Jane Doe" required />
+        </label>
+        <label>
+          Subject
+          <input type="text" name="subject" placeholder="Quick chat about collaboration" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Hi — I'd like to talk about..." required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit">Email me</button>
+          <button type="button" id="copyEmail">Copy my email</button>
+        </div>
+      </form>
+
+      <p class="muted small">Alternative: Replace the form action with a serverless form endpoint (Formspree, Netlify Forms) to collect messages without opening an email client.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Your Name — <a href="#contact">Contact</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
