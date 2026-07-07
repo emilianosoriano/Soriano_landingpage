@@ -22,6 +22,14 @@
 .section{background:transparent;padding:28px 0;border-bottom:1px solid rgba(0,0,0,0.04)}
 .section h2{margin:0 0 10px}
 .muted{color:var(--muted)}
+.intro-section{padding-top:30px}
+.intro-grid{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:24px;align-items:center}
+.intro-copy .eyebrow{margin:0 0 12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em;font-size:.9rem}
+.intro-copy h1{margin:0 0 18px;font-size:clamp(2rem,3vw,3rem);line-height:1.05}
+.intro-copy p{margin:0;max-width:36rem}
+.intro-photo-card{display:flex;justify-content:center}
+.intro-photo-card img{width:100%;max-width:280px;border-radius:24px;box-shadow:0 20px 60px rgba(15,23,42,0.12);object-fit:cover;aspect-ratio:4/5;min-height:320px}
+@media (max-width:900px){.intro-grid{grid-template-columns:1fr}.intro-photo-card{justify-content:flex-start}}
 .grid{display:grid;gap:18px}
 .certificates-grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));align-items:start}
 .card{background:var(--card);border-radius:var(--radius);padding:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06);transition:transform .15s ease}
