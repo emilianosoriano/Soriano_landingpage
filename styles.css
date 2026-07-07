@@ -1,7 +1,21 @@
-:root{--bg:#f7fafc;--card:#fff;--accent:#2563eb;--muted:#6b7280;--radius:10px;--max-width:980px}
+:root{--bg:#ffffff;--card:#fff;--accent:#2563eb;--muted:#6b7280;--radius:10px;--max-width:980px}
 *{box-sizing:border-box}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;background:var(--bg);color:#111}
 .container{max-width:var(--max-width);margin:0 auto;padding:24px}
-.site-header{background:linear-gradient(90deg,#0ea5e9, #2563eb);color:#fff;padding:28px 0}
+.site-header{
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: linear-gradient(90deg,#0ea5e9, #2563eb);
+	color: #fff;
+	padding: 18px 0;
+	transition: box-shadow .2s ease, padding .2s ease, background-color .2s ease;
+	backdrop-filter: blur(6px);
+}
+
+.site-header.scrolled{
+	box-shadow: 0 6px 20px rgba(16,24,40,0.12);
+	padding: 12px 0;
+}
 .name{margin:0;font-size:1.6rem}
 .tagline{margin:6px 0 12px;color:rgba(255,255,255,0.9)}
 .nav a{color:rgba(255,255,255,0.95);margin-right:14px;text-decoration:none;font-weight:600}
