@@ -7,18 +7,18 @@
 	z-index: 1000;
 	background: linear-gradient(90deg,#0ea5e9, #2563eb);
 	color: #fff;
-	padding: 18px 0;
-	transition: box-shadow .2s ease, padding .2s ease, background-color .2s ease;
+	padding: 10px 0;
+	transition: box-shadow .18s ease, padding .18s ease, background-color .18s ease;
 	backdrop-filter: blur(6px);
 }
 
 .site-header.scrolled{
-	box-shadow: 0 6px 20px rgba(16,24,40,0.12);
-	padding: 12px 0;
+	box-shadow: 0 6px 18px rgba(16,24,40,0.12);
+	padding: 6px 0;
 }
 .name{margin:0;font-size:1.6rem}
 .tagline{margin:6px 0 12px;color:rgba(255,255,255,0.9)}
-.nav a{color:rgba(255,255,255,0.95);margin-right:14px;text-decoration:none;font-weight:600}
+.nav a{color:rgba(255,255,255,0.95);margin-right:14px;text-decoration:none;font-weight:600;font-size:0.95rem;padding:6px 8px}
 .section{background:transparent;padding:28px 0;border-bottom:1px solid rgba(0,0,0,0.04)}
 .section h2{margin:0 0 10px}
 .muted{color:var(--muted)}
