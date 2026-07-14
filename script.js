@@ -31,20 +31,29 @@
     });
   }
 
-  // Toggle between Experience and Projects
-  const toggle = document.getElementById('experienceToggle');
+  // Panel toggle for Experience, Projects, and Education
+  const panelButtons = document.querySelectorAll('.toggle-option');
   const workingContent = document.getElementById('workingContent');
   const projectsContent = document.getElementById('projectsContent');
+  const educationContent = document.getElementById('educationContent');
 
-  if (toggle && workingContent && projectsContent) {
-    toggle.addEventListener('change', function() {
-      if (this.checked) {
-        workingContent.classList.remove('active');
-        projectsContent.classList.add('active');
-      } else {
-        workingContent.classList.add('active');
-        projectsContent.classList.remove('active');
-      }
+  const panelMap = {
+    experience: workingContent,
+    projects: projectsContent,
+    education: educationContent
+  };
+
+  if (panelButtons.length && workingContent && projectsContent && educationContent) {
+    panelButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        panelButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        Object.values(panelMap).forEach(panel => panel.classList.remove('active'));
+        const panelId = button.dataset.panel;
+        const targetPanel = panelMap[panelId];
+        if (targetPanel) targetPanel.classList.add('active');
+      });
     });
   }
 
