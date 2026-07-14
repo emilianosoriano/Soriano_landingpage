@@ -33,7 +33,7 @@
 .social-icon svg{width:20px;height:20px;fill:currentColor}
 .intro-photo-card{display:flex;justify-content:center}
 .intro-photo-card img{width:100%;max-width:280px;border-radius:24px;box-shadow:0 20px 60px rgba(15,23,42,0.12);object-fit:cover;aspect-ratio:4/5;min-height:320px}
-@media (max-width:900px){.intro-grid{grid-template-columns:1fr}.intro-photo-card{justify-content:flex-start}}
+@media (max-width:900px){.intro-grid{display:flex;flex-direction:column;}.intro-photo-card{order:-1;justify-content:center;margin-bottom:24px}} 
 .experience-projects-section{padding:40px 0}
 .toggle-container{display:flex;justify-content:center;margin-bottom:32px}
 .toggle-switch.toggle-3way{display:inline-flex;background:#f3f4f6;border-radius:999px;padding:4px;box-shadow:inset 0 1px 2px rgba(15,23,42,0.06)}
